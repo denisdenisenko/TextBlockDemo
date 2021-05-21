@@ -7,14 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="300" Width="200">
     <StackPanel>
-        <TextBlock>
-            Hello <Bold>World </Bold> <Italic> to you </Italic>
-            <LineBreak/>
-            Go to  <Hyperlink  RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.google.com">goolgle.com </Hyperlink>
-        </TextBlock>
+
         
-        <TextBlock TextWrapping="Wrap">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 
-        </TextBlock>
     </StackPanel>
 </Window>
