@@ -10,7 +10,12 @@
         <Label>
             check one of the options
            </Label>
-        <RadioButton GroupName="1">1</RadioButton>
+        <RadioButton GroupName="1">1
+            <WrapPanel>
+                <Image Width="30" Height="20" Source="https://www.one1.co.il/wp-content/uploads/2020/11/one-taldor-388x220.jpg"></Image>
+            </WrapPanel>
+            
+        </RadioButton>
         <RadioButton GroupName="1">2</RadioButton>
         <RadioButton GroupName="1">3</RadioButton>
 
