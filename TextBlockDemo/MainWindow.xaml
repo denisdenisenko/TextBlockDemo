@@ -10,9 +10,10 @@
         <Label>
             check one of the options
            </Label>
-        <RadioButton GroupName="1">1
+        <RadioButton GroupName="1" VerticalContentAlignment="Center">
             <WrapPanel>
-                <Image Width="30" Height="20" Source="https://www.one1.co.il/wp-content/uploads/2020/11/one-taldor-388x220.jpg"></Image>
+                <Image Width="30" Height="20" Source="https://s35691.pcdn.co/wp-content/uploads/2018/09/one-sentence-lesson-plan.jpg"></Image>
+                <Label>1</Label>
             </WrapPanel>
             
         </RadioButton>
