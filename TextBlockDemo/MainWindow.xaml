@@ -43,9 +43,14 @@
         </StackPanel>
         <StackPanel Grid.Column="1">
             <Label FontWeight="Bold"> Topings</Label>
-            <CheckBox>check1</CheckBox>
-            <CheckBox>check2</CheckBox>
-            <CheckBox>check3</CheckBox>
+            <CheckBox VerticalContentAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
+                <WrapPanel>
+                    <Label x:Name="lblCh">Check 1 </Label>
+                    <Image Width="30" Height="20" Source="https://www.elal.com/SiteCollectionImages/Deals_HomePage/Travel_shutterstock_277554173_436X530.jpg"></Image>
+                </WrapPanel>
+            </CheckBox>
+            <CheckBox></CheckBox>
+            <CheckBox></CheckBox>
         </StackPanel>
     </Grid>
 </Window>
