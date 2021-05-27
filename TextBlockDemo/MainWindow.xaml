@@ -6,32 +6,46 @@
         xmlns:local="clr-namespace:TextBlockDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="400">
-    <StackPanel>
-        <Label>
-            check one of the options
-           </Label>
-        <RadioButton x:Name="rbOne" Checked="rbOne_Checked" Unchecked="rbOne_Unchecked" GroupName="1" VerticalContentAlignment="Center">
-            <WrapPanel>
-                <Image Width="30" Height="20" Source="https://s35691.pcdn.co/wp-content/uploads/2018/09/one-sentence-lesson-plan.jpg"></Image>
-                <Label x:Name="lbOne">1</Label>
-            </WrapPanel>
-            
-        </RadioButton>
-        <RadioButton GroupName="1">2</RadioButton>
-        <RadioButton GroupName="1">3</RadioButton>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*">
 
-        <Label>
-            check one of the options
-        </Label>
-        <RadioButton GroupName="2">1</RadioButton>
-        <RadioButton GroupName="2">2</RadioButton>
-        <RadioButton GroupName="2">3</RadioButton>
+            </ColumnDefinition>
+            <ColumnDefinition Width="24*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label>
+                check one of the options
+            </Label>
+            <RadioButton x:Name="rbOne" Checked="rbOne_Checked" Unchecked="rbOne_Unchecked" GroupName="1" VerticalContentAlignment="Center">
+                <WrapPanel>
+                    <Image Width="30" Height="20" Source="https://s35691.pcdn.co/wp-content/uploads/2018/09/one-sentence-lesson-plan.jpg"></Image>
+                    <Label x:Name="lbOne">1</Label>
+                </WrapPanel>
 
-        <Label>
-            check one of the options
-        </Label>
-        <RadioButton GroupName="3">1</RadioButton>
-        <RadioButton GroupName="3">2</RadioButton>
-        <RadioButton GroupName="3">3</RadioButton>
-    </StackPanel>
+            </RadioButton>
+            <RadioButton GroupName="1">2</RadioButton>
+            <RadioButton GroupName="1">3</RadioButton>
+
+            <Label>
+                check one of the options
+            </Label>
+            <RadioButton GroupName="2">1</RadioButton>
+            <RadioButton GroupName="2">2</RadioButton>
+            <RadioButton GroupName="2">3</RadioButton>
+
+            <Label>
+                check one of the options
+            </Label>
+            <RadioButton GroupName="3">1</RadioButton>
+            <RadioButton GroupName="3">2</RadioButton>
+            <RadioButton GroupName="3">3</RadioButton>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <Label FontWeight="Bold"> Topings</Label>
+            <CheckBox>check1</CheckBox>
+            <CheckBox>check2</CheckBox>
+            <CheckBox>check3</CheckBox>
+        </StackPanel>
+    </Grid>
 </Window>
