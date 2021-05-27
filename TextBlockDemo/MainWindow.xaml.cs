@@ -23,7 +23,16 @@ namespace TextBlockDemo
         public MainWindow()
         {
             InitializeComponent();
+        }
 
+        private void rbOne_Checked(object sender, RoutedEventArgs e)
+        {
+            lbOne.Background = Brushes.Red;
+        }
+
+        private void rbOne_Unchecked(object sender, RoutedEventArgs e)
+        {
+            lbOne.Background = Brushes.White;
         }
     }
 }
