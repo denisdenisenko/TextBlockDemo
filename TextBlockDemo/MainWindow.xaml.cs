@@ -23,18 +23,7 @@ namespace TextBlockDemo
         public MainWindow()
         {
             InitializeComponent();
-            TextBlock myTb = new TextBlock();
-            myTb.Text = "Hello";
-            this.Content = myTb;
-            myTb.Inlines.Add("This is addes using Inlines");
-            myTb.Inlines.Add(new Run("run text that i added in code behind")
-            {
-                Foreground = Brushes.Red,
-                TextDecorations = TextDecorations.Underline
-            });
-            ;
-            myTb.TextWrapping = TextWrapping.Wrap;
-            myTb.Foreground = Brushes.BlueViolet;
+
         }
     }
 }
