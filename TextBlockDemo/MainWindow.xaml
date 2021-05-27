@@ -42,15 +42,23 @@
             <RadioButton GroupName="3">3</RadioButton>
         </StackPanel>
         <StackPanel Grid.Column="1">
-            <Label FontWeight="Bold"> Topings</Label>
-            <CheckBox VerticalContentAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
+            <Label FontWeight="Bold"> Checks</Label>
+            <CheckBox Margin="12" x:Name="cbParent" IsThreeState="True"
+                      Checked="cbParent_Checked"
+                      Unchecked="cbParent_Unchecked"> Select all</CheckBox>
+            <CheckBox x:Name="cbOne" Margin="15,5" VerticalContentAlignment="Center" 
+                      Checked="CheckBox_Checked" 
+                      Unchecked="CheckBox_Unchecked">
                 <WrapPanel>
-                    <Label x:Name="lblCh">Check 1 </Label>
+                    <Label x:Name="lblCh">1</Label>
                     <Image Width="30" Height="20" Source="https://www.elal.com/SiteCollectionImages/Deals_HomePage/Travel_shutterstock_277554173_436X530.jpg"></Image>
                 </WrapPanel>
             </CheckBox>
-            <CheckBox></CheckBox>
-            <CheckBox></CheckBox>
+            <CheckBox Margin="15,5" Name="cbTwo" Unchecked="cbGroupCheckedChanged"
+                      Checked="cbGroupCheckedChanged">2</CheckBox>
+            <CheckBox Margin="15,5" Name="cbThree"
+                      Unchecked="cbGroupCheckedChanged"
+                      Checked="cbGroupCheckedChanged">3</CheckBox>
         </StackPanel>
     </Grid>
 </Window>
