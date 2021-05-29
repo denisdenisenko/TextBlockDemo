@@ -41,7 +41,9 @@
             <RadioButton GroupName="3">2</RadioButton>
             <RadioButton GroupName="3">3</RadioButton>
             <Label HorizontalAlignment="Center">Image</Label>
-            <Image Width="100" Source="https://analyticsindiamag.com/wp-content/uploads/2020/10/7d744a684fe03ebc7e8de545f97739dd.jpg"></Image>
+            <Image x:Name="myImg" Width="100"
+                   MouseUp="Image_MouseUp"
+                   Source="https://analyticsindiamag.com/wp-content/uploads/2020/10/7d744a684fe03ebc7e8de545f97739dd.jpg"></Image>
         </StackPanel>
         <StackPanel Grid.Column="1">
             <Label FontWeight="Bold"> Checks</Label>

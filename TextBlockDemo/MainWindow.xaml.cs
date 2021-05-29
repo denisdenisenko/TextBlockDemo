@@ -76,5 +76,24 @@ namespace TextBlockDemo
                 cbParent.IsChecked = false;
             }
         }
+
+        public bool shifted = false; 
+        private void Image_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (shifted == false) 
+            {
+                myImg.Source = new BitmapImage(new Uri("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8AUrmARudAxlGSh23Usv7YY0KtMcR4qwQA&usqp=CAU"));
+                shifted = true;
+                Console.WriteLine("t");
+            }
+
+            else if (shifted == true)
+            {
+                myImg.Source = new BitmapImage(new Uri("https://analyticsindiamag.com/wp-content/uploads/2020/10/7d744a684fe03ebc7e8de545f97739dd.jpg"));
+                shifted = false;
+                Console.WriteLine("f");
+
+            }
+        }
     }
 }
