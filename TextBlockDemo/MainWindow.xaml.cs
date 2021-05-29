@@ -23,6 +23,7 @@ namespace TextBlockDemo
         public MainWindow()
         {
             InitializeComponent();
+            myViewTxtBlock.Text = myCalendar.SelectedDate.ToString();
         }
 
         private void rbOne_Checked(object sender, RoutedEventArgs e)
@@ -102,5 +103,12 @@ namespace TextBlockDemo
                 //        mySldTxtBlock.Text =" Slider value is : " +  mySlider.Value.ToString();
                 //    mySldTxtBlock.FontSize = (mySlider.Value/10) + 10;
             }
+
+        private void myCalendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(myViewTxtBlock != null)
+                myViewTxtBlock.Text = myCalendar.SelectedDate.ToString();
+
+        }
     }
 }

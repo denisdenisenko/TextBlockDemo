@@ -80,6 +80,19 @@
                 Path=Value, UpdateSourceTrigger=PropertyChanged}">
                 heys
             </TextBlock>
+            <Viewbox Stretch="None">
+                <Calendar x:Name="myCalendar"
+                          DisplayMode="Month"
+                          SelectedDate="01.01.2022"
+                          SelectedDatesChanged="myCalendar_SelectedDatesChanged">
+                    <Calendar.BlackoutDates>
+                        <CalendarDateRange Start="05.01.2021" End="05.09.2021" />
+                    </Calendar.BlackoutDates>
+                </Calendar>
+            </Viewbox>
+            <TextBlock x:Name="myViewTxtBlock"></TextBlock>
+
+
         </StackPanel>
     </Grid>
 </Window>
