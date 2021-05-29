@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TextBlockDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="400">
+        Title="MainWindow" Height="800" Width="400">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="25*">
@@ -40,6 +40,8 @@
             <RadioButton GroupName="3">1</RadioButton>
             <RadioButton GroupName="3">2</RadioButton>
             <RadioButton GroupName="3">3</RadioButton>
+            <Label HorizontalAlignment="Center">Image</Label>
+            <Image Width="100" Source="https://analyticsindiamag.com/wp-content/uploads/2020/10/7d744a684fe03ebc7e8de545f97739dd.jpg"></Image>
         </StackPanel>
         <StackPanel Grid.Column="1">
             <Label FontWeight="Bold"> Checks</Label>
@@ -62,7 +64,8 @@
             <Label>name :</Label>
             <TextBox></TextBox>
             <Label>password :</Label>
-            <PasswordBox PasswordChar="0"></PasswordBox>
+            <PasswordBox PasswordChar="#"
+                         MaxLength="3"></PasswordBox>
 
         </StackPanel>
     </Grid>
