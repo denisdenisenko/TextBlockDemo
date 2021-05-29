@@ -59,6 +59,11 @@
             <CheckBox Margin="15,5" Name="cbThree"
                       Unchecked="cbGroupCheckedChanged"
                       Checked="cbGroupCheckedChanged">3</CheckBox>
+            <Label>name :</Label>
+            <TextBox></TextBox>
+            <Label>password :</Label>
+            <PasswordBox PasswordChar="0"></PasswordBox>
+
         </StackPanel>
     </Grid>
 </Window>
