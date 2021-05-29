@@ -62,25 +62,25 @@ namespace TextBlockDemo
             cbThree.IsChecked = newVal;
         }
 
-        private void cbGroupCheckedChanged(object sender, RoutedEventArgs e) 
+        private void cbGroupCheckedChanged(object sender, RoutedEventArgs e)
         {
             cbParent.IsChecked = null;
-            if ((cbOne.IsChecked==true) &&
-                    (cbTwo.IsChecked==true) && (cbThree.IsChecked==true)) 
+            if ((cbOne.IsChecked == true) &&
+                    (cbTwo.IsChecked == true) && (cbThree.IsChecked == true))
             {
                 cbParent.IsChecked = true;
             }
-            if ((cbOne.IsChecked==false) &&
-                    (cbTwo.IsChecked==false) && (cbThree.IsChecked==false))
+            if ((cbOne.IsChecked == false) &&
+                    (cbTwo.IsChecked == false) && (cbThree.IsChecked == false))
             {
                 cbParent.IsChecked = false;
             }
         }
 
-        public bool shifted = false; 
+        public bool shifted = false;
         private void Image_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            if (shifted == false) 
+            if (shifted == false)
             {
                 myImg.Source = new BitmapImage(new Uri("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8AUrmARudAxlGSh23Usv7YY0KtMcR4qwQA&usqp=CAU"));
                 shifted = true;
@@ -90,13 +90,17 @@ namespace TextBlockDemo
                 myImg.Source = new BitmapImage(new Uri("https://analyticsindiamag.com/wp-content/uploads/2020/10/7d744a684fe03ebc7e8de545f97739dd.jpg"));
                 shifted = false;
             }
-        }
 
-        private void mySlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            if (mySldTxtBlock != null)
-                mySldTxtBlock.Text =" Slider value is : " +  mySlider.Value.ToString();
-            mySldTxtBlock.FontSize = (mySlider.Value/10) + 10;
+
         }
+            // this function also works from manipulaing the values throug the properties of text blic
+            // by binding them to sliders value
+
+            private void mySlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+            {
+                //    if (mySldTxtBlock != null)
+                //        mySldTxtBlock.Text =" Slider value is : " +  mySlider.Value.ToString();
+                //    mySldTxtBlock.FontSize = (mySlider.Value/10) + 10;
+            }
     }
 }

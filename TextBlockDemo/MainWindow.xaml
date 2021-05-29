@@ -75,7 +75,11 @@
                     IsSnapToTickEnabled="True"
                     Value="0"
                     ValueChanged="mySlider_ValueChanged"></Slider>
-            <TextBlock x:Name="mySldTxtBlock"></TextBlock>
+            <TextBlock x:Name="mySldTxtBlock"
+                       FontSize="{Binding ElementName=mySlider, 
+                Path=Value, UpdateSourceTrigger=PropertyChanged}">
+                heys
+            </TextBlock>
         </StackPanel>
     </Grid>
 </Window>
