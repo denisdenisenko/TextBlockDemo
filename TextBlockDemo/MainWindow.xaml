@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TextBlockDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="400">
+        Title="MainWindow" Height="800" Width="450">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="25*">
@@ -69,6 +69,13 @@
             <PasswordBox PasswordChar="#"
                          MaxLength="3"></PasswordBox>
 
+            <Slider x:Name="mySlider"
+                Maximum="100" TickPlacement="BottomRight" 
+                    TickFrequency="10"
+                    IsSnapToTickEnabled="True"
+                    Value="0"
+                    ValueChanged="mySlider_ValueChanged"></Slider>
+            <TextBlock x:Name="mySldTxtBlock"></TextBlock>
         </StackPanel>
     </Grid>
 </Window>

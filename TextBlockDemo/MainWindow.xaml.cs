@@ -84,16 +84,19 @@ namespace TextBlockDemo
             {
                 myImg.Source = new BitmapImage(new Uri("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8AUrmARudAxlGSh23Usv7YY0KtMcR4qwQA&usqp=CAU"));
                 shifted = true;
-                Console.WriteLine("t");
             }
-
             else if (shifted == true)
             {
                 myImg.Source = new BitmapImage(new Uri("https://analyticsindiamag.com/wp-content/uploads/2020/10/7d744a684fe03ebc7e8de545f97739dd.jpg"));
                 shifted = false;
-                Console.WriteLine("f");
-
             }
+        }
+
+        private void mySlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (mySldTxtBlock != null)
+                mySldTxtBlock.Text =" Slider value is : " +  mySlider.Value.ToString();
+            mySldTxtBlock.FontSize = (mySlider.Value/10) + 10;
         }
     }
 }
