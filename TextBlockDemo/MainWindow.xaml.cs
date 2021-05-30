@@ -122,7 +122,7 @@ namespace TextBlockDemo
 
         private void Expander_Expanded(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Expander was clicked");
+            MessageBox.Show("Expander was clicked ");
         }
     }
 }
