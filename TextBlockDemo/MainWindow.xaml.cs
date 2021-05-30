@@ -119,5 +119,10 @@ namespace TextBlockDemo
                 MessageBox.Show("the date hass been changed to " + myDate);
             }
         }
+
+        private void Expander_Expanded(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Expander was clicked");
+        }
     }
 }
